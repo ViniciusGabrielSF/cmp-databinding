@@ -1,0 +1,37 @@
+<div class="container">
+  <h2>Class</h2>
+  <cockpit (elementCreated)="onElementAdded($event)"   />
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+
+      @for(element of serverElements; track $index){
+        <server-element [srvElement]="element" />
+      }
+
+    </div>
+  </div>
+</div>
+
+<hr>
+<hr>
+
+<div class="container">
+  <h2>Task</h2>
+  <app-game-control (couterIncremented)="onCouterIncremented($event)" />
+
+  <div class="divided">
+      <div >
+        @for (item of evenNumbers; track $index) {
+          <app-even class="display" [evenNumber]="item" />
+        }
+      </div>
+
+      <div >
+        @for (item of oddNumbers; track $index) {
+          <app-odd class="display" [oddNumber]="item" />
+        }
+      </div>
+  </div>
+  
+</div>

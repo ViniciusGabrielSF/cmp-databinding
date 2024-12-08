@@ -1,0 +1,22 @@
+.container {
+  margin-top: 30px;
+}
+
+.divided { 
+  display: flex;
+  justify-content: space-around;
+}
+
+.display {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.display:nth-child(even) {
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.display:nth-child(odd):nth-child(odd) {
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
